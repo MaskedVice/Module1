@@ -1,6 +1,7 @@
-package com.scripfinder.module1.util;
+package com.scripfinder.module1.dto;
 
-import com.scripfinder.module1.dto.Candle;
+import java.util.List;
+import java.util.Map;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -13,8 +14,6 @@ import lombok.ToString;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-public class DayDataRequest {
-    private String scripName;
-    private Candle candle;
-
+public class CurrentDataRequest {
+    Map<String,InstrumentData> data;
 }

@@ -1,8 +1,6 @@
-package com.scripfinder.module1.util;
+package com.scripfinder.module1.dto;
 
 import java.util.List;
-
-import com.scripfinder.module1.dto.Candle;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -15,7 +13,7 @@ import lombok.ToString;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-public class MonthDataRequest {
+public class HistoricalDataRequest {
         private String scripName;
         private List<Candle> candles;
 }

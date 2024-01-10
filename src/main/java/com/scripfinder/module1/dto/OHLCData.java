@@ -1,5 +1,7 @@
 package com.scripfinder.module1.dto;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -11,19 +13,10 @@ import lombok.ToString;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-public class Candle {
-    private String timestamp;
-
+@JsonIgnoreProperties(ignoreUnknown = true)
+public class OHLCData {
     private double open;
-
     private double high;
-
     private double low;
-
     private double close;
-
-    private double volume;
-    
-    private double openInterest;
-
 }

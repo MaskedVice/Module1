@@ -13,7 +13,7 @@ import lombok.ToString;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-public class CandleResponse {
+public class HistoricalCandleResponse {
 
     private String status;
     
